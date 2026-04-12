@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Inquiry Assistant Summary</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body class="app-body">
+    <main class="py-5">
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-lg-10">
+                    <section class="hero-banner rounded-4 p-4 p-md-5 shadow-sm">
+                        <p class="text-uppercase fw-semibold small tracking-wide text-success mb-2">Assistant Session Complete</p>
+                        <h1 class="display-6 fw-bold mb-3">Inquiry Summary</h1>
+                        <p class="lead text-secondary mb-0 hero-copy">
+                            Thank you for using the College Inquiry Assistant. Below is the final summary containing the
+                            student information submitted during the session and the assistant creator information.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-4 h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="h3 mb-0">User Information</h2>
+                                <span class="badge text-bg-success-subtle text-success-emphasis rounded-pill">Student</span>
+                            </div>
+                            <dl class="summary-list mb-0">
+                                <div class="summary-row">
+                                    <dt>First Name</dt>
+                                    <dd>{{ user_info.first_name }}</dd>
+                                </div>
+                                <div class="summary-row">
+                                    <dt>Last Name</dt>
+                                    <dd>{{ user_info.last_name }}</dd>
+                                </div>
+                                <div class="summary-row">
+                                    <dt>Email Address</dt>
+                                    <dd class="text-break">{{ user_info.email }}</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-4 h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="h3 mb-0">Creator Information</h2>
+                                <span class="badge text-bg-warning-subtle text-warning-emphasis rounded-pill">Author</span>
+                            </div>
+                            <dl class="summary-list mb-0">
+                                <div class="summary-row">
+                                    <dt>First Name</dt>
+                                    <dd>{{ creator.first_name }}</dd>
+                                </div>
+                                <div class="summary-row">
+                                    <dt>Last Name</dt>
+                                    <dd>{{ creator.last_name }}</dd>
+                                </div>
+                                <div class="summary-row">
+                                    <dt>School Email Address</dt>
+                                    <dd class="text-break">{{ creator.school_email }}</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-10">
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                            <div>
+                                <h2 class="h4 mb-1">Start a New Session</h2>
+                                <p class="text-secondary mb-0">Return to the landing page to enter a new student inquiry.</p>
+                            </div>
+                            <a href="/" class="btn btn-success btn-lg rounded-pill px-4">Return to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

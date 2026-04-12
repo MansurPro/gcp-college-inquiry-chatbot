@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.pylint.d/
+.ipynb_checkpoints/
+pip-log.txt
+pip-delete-this-directory.txt
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# FastAPI (common patterns)
+instance/
+.cache/
+*.db
+*.sqlite3
+alembic/
+logs/
+*.log
+uvicorn.log
+*.pid
+
