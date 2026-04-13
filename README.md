@@ -73,24 +73,14 @@ The **required chatbot flow remains the default and grading-safe path**.
 
 ## 📸 Screenshots
 
-> Add your screenshots to a `docs/` folder and keep these image links.
-
 ### Landing Page
-```md
 ![Landing Page](docs/landing-page.png)
-````
 
 ### Chat Interface
-
-```md
 ![Chat Interface](docs/chat-interface.png)
-```
 
 ### Final Summary
-
-```md
 ![Summary Page](docs/summary-page.png)
-```
 
 ---
 
