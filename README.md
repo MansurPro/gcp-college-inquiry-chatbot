@@ -98,24 +98,31 @@ The **required chatbot flow remains the default and grading-safe path**.
 ## 📂 Project Structure
 
 ```bash
-gcp-chatbot/
+gcp-college-inquiry-chatbot/
+├── app.yaml
+├── main.py
+├── requirements.txt
+├── test.py
+├── README.md
 ├── bonus_ai/
 │   ├── __init__.py
 │   ├── college_facts.py
 │   ├── gemini_client.py
 │   ├── prompts.py
-│   ├── README.md
-│   └── schemas.py
+│   ├── schemas.py
+│   └── README.md
+├── src/
+│   ├── config.py
+│   ├── messages.py
+│   └── utils.py
 ├── static/
 │   └── style.css
 ├── templates/
 │   ├── chat.html
 │   ├── index.html
 │   └── summary.html
-├── app.yaml
-├── main.py
-├── requirements.txt
-└── test.py
+├── docs/
+│   └── ...
 ```
 
 ---
